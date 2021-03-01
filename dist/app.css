@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+a {
+  color: blue;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+}
+.container .logo {
+  display: flex;
+  padding: 15px;
+}
+.container .logo img {
+  height: 30px;
+  align-self: center;
+  margin-right: 10px;
+}
+.container .logo span {
+  align-self: center;
+  text-decoration: underline;
+  cursor: pointer;
+  color: grey;
+  font-size: 1.2em;
+}
+.container .navbar {
+  height: 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  border-bottom: 1px solid lightgrey;
+}
+.container .navbar ul {
+  margin: 0;
+}
+.container .navbar ul li {
+  display: inline-block;
+  padding: 0 25px;
+  position: relative;
+  bottom: 9px;
+  left: 0;
+}
+.container .navbar ul li:last-child {
+  color: blue;
+  font-weight: 500;
+}
+.container .navbar ul li:last-child::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  border-bottom: 4px solid blue;
+  margin: 5px auto;
+}
+.container .content {
+  width: 1000px;
+  margin: 0 auto;
+}
+.container .content ol {
+  padding: 12px;
+}
+.container .content ol ul {
+  list-style-type: lower-latin;
+  padding-left: 50px;
+}
+.container .content ol ul li {
+  padding-left: 30px;
+}
